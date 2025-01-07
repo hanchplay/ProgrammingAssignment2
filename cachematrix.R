@@ -32,9 +32,3 @@ cacheSolve <- function(x, ...) {
   x$setInverse(m)
   m
 }
-
-data <- matrix(runif(9, min = 0, max = 1), nrow = 3, ncol = 3)
-k <- makeCacheMatrix(f)
-k$get()
-invk <- cacheSolve(k)
-invk
